@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab3
 {
-    class Arriendo
+    internal class Arriendo
     {
 
     }

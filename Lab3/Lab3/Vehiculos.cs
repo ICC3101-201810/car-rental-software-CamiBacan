@@ -6,15 +6,24 @@ using System.Threading.Tasks;
 
 namespace Lab3
 {
+    public enum Tipo { auto, acuatico, moto, camion, bus, maqPesada };
+
     public class Vehiculos
     {
-        string patente;
-        enum Tipo {auto, acuatico,moto,camion,bus, maqPesada};
+        private string patente;
+        private Tipo tipo;
 
-        public Vehiculos(string Patente)
+        public Vehiculos(string Patente, Tipo tip)
         {
            patente = Patente;
+            tipo = tip;
+        }
+
+        public string GetPatente()
+        {
+            return patente;
         }
     }
+
 
 }
