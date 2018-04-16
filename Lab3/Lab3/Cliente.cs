@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace Lab3
 {
-    class Cliente
+    public class Cliente
     {
         string nombre;
         string rut;
-        string tipo;
+        enum TipoCliente { persona, empresa,organizacion, institucion };
 
-        public Cliente(string Nombre, string Rut, string Tipo)
+        public Cliente(string n, string r)
         {
-            nombre = Nombre;
-            rut = Rut;
-            tipo = Tipo;
+            n = nombre;
+            r = rut;
         }
-
     }
+
 }
+        
