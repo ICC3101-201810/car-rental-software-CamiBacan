@@ -22,7 +22,6 @@ namespace Lab3
                 {
                     Sucursal s;
                     Rentacar bb;
-                    bb.GetSucursales();
                     break;
                 }
                 else if (accion == "2")

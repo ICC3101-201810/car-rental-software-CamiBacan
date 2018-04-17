@@ -8,6 +8,6 @@ namespace Lab3
 {
     interface IVerificable
     {
-        void Verificar(Cliente c);
+        void Verificar(Persona p, Empresa e);
     }
 }

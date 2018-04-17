@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab3
 {
-    class Persona : Cliente , IVerificable
+    class Persona : Cliente, IVerificable
     {
         bool licencia;
 
@@ -20,7 +20,7 @@ namespace Lab3
             return licencia;
         }
 
-        public void IVerificable.Verificar()
+        public void Verificar(Persona p, Empresa e)
         {
             if (p.GetLicense() == true)
             {

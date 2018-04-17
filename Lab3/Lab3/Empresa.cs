@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab3
 {
-    class Empresa : Cliente
+    class Empresa : Cliente, IVerificable
     {
         bool permiso;
         
@@ -15,15 +15,20 @@ namespace Lab3
             permiso = Permiso;
         }
 
-        public void Verificar(Persona p)
+        public bool GetPermiso()
         {
-            if (p.GetLicense() == true)
+            return permiso;
+        }
+
+        public void Verificar(Persona p, Empresa e)
+        {
+            if (e.GetPermiso() == true)
             {
-                Console.WriteLine("Persona tiene licencia");
+                Console.WriteLine("Empresa tiene Permiso");
             }
             else
             {
-                Console.WriteLine("Persona no tiene licencia");
+                Console.WriteLine("Empresa no tiene Permiso");
             }
         }
     }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Lab3
 {
 
-    public class Cliente
+    public class Cliente : IVerificable
     {
         //public enum TipoCliente { empresa, organizacion, institucion };
 
@@ -32,9 +32,12 @@ namespace Lab3
             return rut;
         }
 
-        
-        
-               
+        public void Verificar(Cliente c)
+        {
+            
+        }
+
+
     }
 
 
