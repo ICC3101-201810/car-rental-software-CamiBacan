@@ -11,12 +11,14 @@ namespace Lab3
         Cliente cliente;
         Accesorios accesorio;
         Vehiculos vehiculo;
+        Sucursal sucursal;
 
-        public Arriendo(Cliente client, Accesorios acc, Vehiculos veh)
+        public Arriendo(Cliente client, Accesorios acc, Vehiculos veh, Sucursal suc)
         {
             cliente = client;
             accesorio = acc;
             vehiculo = veh;
+            sucursal = suc;
         }
 
         public Cliente GetCliente()
@@ -32,6 +34,11 @@ namespace Lab3
         public Vehiculos GetVehiculos()
         {
             return vehiculo;
+        }
+
+        public Sucursal GetSucursal()
+        {
+            return sucursal;
         }
     }
 }

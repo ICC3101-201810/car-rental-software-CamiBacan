@@ -9,17 +9,17 @@ namespace Lab3
 
     public class Cliente
     {
-        public enum TipoCliente { persona, empresa, organizacion, institucion };
+        //public enum TipoCliente { empresa, organizacion, institucion };
 
         string nombre;
         string rut;
-        TipoCliente tipo;
+        //protected TipoCliente tipo;
 
-        public Cliente(string n, string r, TipoCliente t)
+        public Cliente(string n, string r /*, TipoCliente t*/)
         {
             nombre=n;
             rut=r;
-            tipo=t;
+            //tipo=t;
         }      
 
         public string GetNombre()
@@ -32,8 +32,11 @@ namespace Lab3
             return rut;
         }
 
-
+        
+        
+               
     }
+
 
 }
         

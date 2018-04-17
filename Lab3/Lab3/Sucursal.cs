@@ -6,15 +6,17 @@ using System.Threading.Tasks;
 
 namespace Lab3
 {
-    internal class Sucursal
+    public class Sucursal
     {
         private int nroSucursal;
         private string direccion;
+        private string nombre;
 
-        public Sucursal(int sucursal, string Direccion)
+        public Sucursal(int sucursal, string Direccion, string Nombre)
         {
             nroSucursal = sucursal;
             direccion = Direccion;
+            nombre = Nombre;
         }
 
         public int GetNroSucursal()
@@ -27,7 +29,10 @@ namespace Lab3
             return direccion;
         }
 
-
+        public string GetNombre()
+        {
+            return nombre;
+        }
 
     }
 }
